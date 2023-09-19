@@ -121,6 +121,12 @@ The difference between using width: 100vw instead of width: 100% is that while 1
 viewport width has a specific measure, in this case the width of the available screen, including the document margin. */
 }
 
+.window-scroll {
+  background: var(--color-primary);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+/* changes navbar styles on scroll using javascript */
+
 .nav-container {
   height: 100%;
   display: flex;
@@ -251,4 +257,16 @@ which is GRAPHIC DESIGN, we to change the background to color danger */
 
 .category p{
   font-size: 0.85rem;
+}
+
+/* ==========================POPULAR COURSES=================== */
+/* 
+.courses{
+  margin-top: 10rem;
+} */
+
+.courses-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
