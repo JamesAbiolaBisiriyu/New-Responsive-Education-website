@@ -179,6 +179,76 @@ header {
 
 .categories h1{
   line-height: 1;
-  margin-bottom: ;
+  margin-bottom: 48px;
 }
 /* styles every H1 inside SECTION: CATEGORIES */
+
+.categories-container{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap : 64px;
+
+}
+
+.categories-left{
+  margin-right: 64px;
+}
+
+.categories-left p{
+  margin: 16px 0 48px;
+}
+
+.categories-right{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 19.2px;
+}
+
+.category{
+  background: var(--color-bg2);
+  padding: 32px;
+  border-radius: 32px;
+  transition: var(--transition);
+}
+
+.category:hover{
+  box-shadow: 0 48px 48px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.category:nth-child(2) .catgory-icon{
+  background: var(--color-danger);
+}
+
+/*we use the pseudo selector here and here i'm going to get the second one okay so the nth child and i'm going to get the second one 
+which is GRAPHIC DESIGN, we to change the background to color danger */
+
+.category:nth-child(3) .catgory-icon{
+  background: var(--color-success);
+}
+
+.category:nth-child(4) .catgory-icon{
+  background: var(--color-warning);
+}
+
+.category:nth-child(5) .catgory-icon{
+  background: var(--color-success);
+}
+
+.category:nth-child(6) .catgory-icon{
+  background: var(--color-bg1);
+}
+
+.catgory-icon{
+  background: var(--color-primary);
+  padding: 0.7rem;
+  border-radius: 0.9rem;
+}
+
+.category h5 {
+  margin: 2rem 0 1rem;
+}
+
+.category p{
+  font-size: 0.85rem;
+}
