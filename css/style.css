@@ -170,3 +170,15 @@ header {
   margin: 16px 0 38.4px;
 
 }
+
+/* ==========================CATEGORIES BLOCK STYLING=================== */
+
+.categories{
+  background: var(--color-bg1);
+}
+
+.categories h1{
+  line-height: 1;
+  margin-bottom: ;
+}
+/* styles every H1 inside SECTION: CATEGORIES */
