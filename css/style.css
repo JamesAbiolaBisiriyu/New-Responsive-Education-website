@@ -260,13 +260,86 @@ which is GRAPHIC DESIGN, we to change the background to color danger */
 }
 
 /* ==========================POPULAR COURSES=================== */
-/* 
+
 .courses{
-  margin-top: 10rem;
-} */
+  margin-top: 16 0px;
+}
 
 .courses-container{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
+
+.course{
+  background: var(--color-bg1);
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.course:hover{
+  background: transparent;
+  border-color: var(--color-primary);
+}
+
+.course-info{
+  padding: 32px;
+}
+
+
+.course-info p {
+  margin: 1.2rem o 2rem;
+  font-size: 0.9rem;
+}
+
+/* ============================== FAQS==========================*/
+
+.faqs{
+  background: var(--color-bg1);
+  box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+
+.faqs-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap : 1rem;
+  
+}
+
+.faq{
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  gap : 1.4rem;
+  height: fit-content;
+  background: var(--color-primary);
+  cursor: pointer;
+
+}
+
+/* each frequently asked question and give it a pattern of two okay i'm going to display flex and align items to the center let me give some gap between them as well 1.
+1:05:44
+4 ram once you set the height to be fit content give it a background of color primary now let me set the cursor to pointer okay i want this to look clickable so like that should be pointer now i'm going to select the h4 f frequently asked question and 
+then h4 font size here is going to be one ram i'm going to set the line height to */
+
+faq h4{
+  font-size: 1rem;
+  line-height: 2.2rem;
+}
+
+.faq-icon{
+  align-self: flex-start;
+  font-size: 1.2rem;
+}
+
+.faq p{
+  margin: 0.8rem;
+  display: none;
+}
+
+
+.faq.open p {
+  display: block;
+}
+
