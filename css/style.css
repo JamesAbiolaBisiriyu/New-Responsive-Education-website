@@ -114,6 +114,7 @@ img{
   position: fixed;
   top: 0;
   z-index: 11;
+  
 
   /* VW standing for View Width 
 vw and vh stand for viewport width and viewport height respectively.
@@ -397,10 +398,11 @@ then h4 font size here is going to be one ram i'm going to set the line height t
 
 /* ============================== FOOTER ==========================*/
 
-.footer {
+footer {
   background: var(--color-bg1);
   padding-top: 5rem;
   font-size: 0;
+  /* margin-top: 500px; */
 }
 
 .footer-container{
