@@ -5,7 +5,7 @@
   grid-template-columns: 40% 60%;
   gap : rem;
   height: 30rem;
-  margin: 2rem auto;
+  margin: 2rem aut;
   border-radius: 1rem;
 }
 
@@ -72,6 +72,7 @@ margin-bottom: 2rem;
   flex-direction: column;
   gap: 1.2rem;
   margin-right:4rem;
+  gap: 4rem;
 
 }
 
@@ -96,4 +97,57 @@ margin-bottom: 2rem;
   cursor: pointer;
   margin-top: 1rem;
 }
+
+/*====================== MEDIA QUERIES ==========================*/
+
+@media screen and (max-width: 1024px) {
+  .contact-container {
+    gap: 1.5rem;
+    margin-top: 3rem;
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  .contact-aside {
+    width: auto;
+    padding: 1.5rem;
+    bottom: 0;
+  }
+
+  .contact-form {
+    align-self: center;
+    margin-right: 1.5rem;
+  }
+  
+}
+
+/* ====================== MEDIA QUERIES ==========================*/ 
+
+@media screen and (max-width: 600px) {
+
+  .contact-container{
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .contact-form{
+    margin: 0 1.5rem 3rem;
+
+  }
+
+  .form-name{
+    flex-direction: column;
+  }
+
+  .form-name input[type="text"]{
+    width: 100%;
+  }
+  .footer-container{
+    width: 100%;
+  }
+}
+
+
 
